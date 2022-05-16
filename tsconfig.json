@@ -1,0 +1,10 @@
+{
+    "lib": ["esnext", "dom"],
+    "compilerOptions": {
+        "jsx": "react",
+        "alwaysStrict": false,
+        "strictFunctionTypes": false,
+        "strictPropertyInitialization": false,
+        "esModuleInterop": true
+    }
+}
