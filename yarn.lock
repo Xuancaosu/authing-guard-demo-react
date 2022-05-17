@@ -53,10 +53,10 @@
     jsonpointer "^5.0.0"
     leven "^3.1.0"
 
-"@authing/react-ui-components@3.1.12-rc.4":
-  version "3.1.12-rc.4"
-  resolved "https://registry.npmjs.org/@authing/react-ui-components/-/react-ui-components-3.1.12-rc.4.tgz#ccb5e6b43f3c378bd6c68605ace77399d43c6e7a"
-  integrity sha512-ok5mqV3eWPgRzI8OpyGoyizuSU7wCHLt1fFNnCRg7edo8Jdx64TPBg8xcgQsGooG2qWUf//Jfdxw+y5INDTk4w==
+"@authing/react-ui-components@3.1.13-rc.2":
+  version "3.1.13-rc.2"
+  resolved "https://registry.npmjs.org/@authing/react-ui-components/-/react-ui-components-3.1.13-rc.2.tgz#f60104982f7bbb5393e398367d69ae4c05e3baa1"
+  integrity sha512-Oh+fgVv/od5piotV+CqvelJieQD+ILIcYQTo7XN2XPn18AO/RXiH5/FtZNYxsggVecCNY4Cgngd9wcXjEBtM6w==
   dependencies:
     antd "^4.8.0"
     authing-js-sdk "4.23.30-alpha.3"
@@ -2000,6 +2000,13 @@
   resolved "https://registry.npmmirror.com/@types/range-parser/-/range-parser-1.2.4.tgz#cd667bcfdd025213aafb7ca5915a932590acdcdc"
   integrity sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==
 
+"@types/react-dom@^16.9.8":
+  version "16.9.16"
+  resolved "https://registry.npmjs.org/@types/react-dom/-/react-dom-16.9.16.tgz#c591f2ed1c6f32e9759dfa6eb4abfd8041f29e39"
+  integrity sha512-Oqc0RY4fggGA3ltEgyPLc3IV9T73IGoWjkONbsyJ3ZBn+UPPCYpU2ec0i3cEbJuEdZtkqcCF2l1zf2pBdgUGSg==
+  dependencies:
+    "@types/react" "^16"
+
 "@types/react-dom@^18.0.0":
   version "18.0.3"
   resolved "https://registry.npmmirror.com/@types/react-dom/-/react-dom-18.0.3.tgz#a022ea08c75a476fe5e96b675c3e673363853831"
@@ -2007,17 +2014,19 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-dom@^18.0.4":
-  version "18.0.4"
-  resolved "https://registry.npmjs.org/@types/react-dom/-/react-dom-18.0.4.tgz#dcbcadb277bcf6c411ceff70069424c57797d375"
-  integrity sha512-FgTtbqPOCI3dzZPZoC2T/sx3L34qxy99ITWn4eoSA95qPyXDMH0ALoAqUp49ITniiJFsXUVBtalh/KffMpg21Q==
-  dependencies:
-    "@types/react" "*"
-
-"@types/react@*", "@types/react@^18.0.9":
+"@types/react@*":
   version "18.0.9"
   resolved "https://registry.npmmirror.com/@types/react/-/react-18.0.9.tgz#d6712a38bd6cd83469603e7359511126f122e878"
   integrity sha512-9bjbg1hJHUm4De19L1cHiW0Jvx3geel6Qczhjd0qY5VKVE2X5+x77YxAepuCwVh4vrgZJdgEJw48zrhRIeF4Nw==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/react@^16", "@types/react@^16.9.53":
+  version "16.14.26"
+  resolved "https://registry.npmjs.org/@types/react/-/react-16.14.26.tgz#82540a240ba7207ebe87d9579051bc19c9ef7605"
+  integrity sha512-c/5CYyciOO4XdFcNhZW1O2woVx86k4T+DO2RorHZL7EhitkNQgSD/SgpdZJAUJa/qjVgOmTM44gHkAdZSXeQuQ==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -7337,7 +7346,7 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.6.1, prop-types@^15.8.1:
+prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmmirror.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -7824,13 +7833,15 @@ react-dev-utils@^12.0.1:
     strip-ansi "^6.0.1"
     text-table "^0.2.0"
 
-react-dom@^18.1.0:
-  version "18.1.0"
-  resolved "https://registry.npmmirror.com/react-dom/-/react-dom-18.1.0.tgz#7f6dd84b706408adde05e1df575b3a024d7e8a2f"
-  integrity sha512-fU1Txz7Budmvamp7bshe4Zi32d0ll7ect+ccxNu9FlObT605GOEB8BfO4tmRJ39R5Zj831VCpvQ05QPBW5yb+w==
+react-dom@16.14.0:
+  version "16.14.0"
+  resolved "https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz#7ad838ec29a777fb3c75c3a190f661cf92ab8b89"
+  integrity sha512-1gCeQXDLoIqMgqD3IO2Ah9bnf0w9kzhwN5q4FGnHZ67hBm9yePzB5JJAIQCc8x3pFnNlwFq4RidZggNAAkzWWw==
   dependencies:
     loose-envify "^1.1.0"
-    scheduler "^0.22.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    scheduler "^0.19.1"
 
 react-error-overlay@^6.0.11:
   version "6.0.11"
@@ -7947,12 +7958,14 @@ react-use@^17.3.1:
     ts-easing "^0.2.0"
     tslib "^2.1.0"
 
-react@^18.1.0:
-  version "18.1.0"
-  resolved "https://registry.npmmirror.com/react/-/react-18.1.0.tgz#6f8620382decb17fdc5cc223a115e2adbf104890"
-  integrity sha512-4oL8ivCz5ZEPyclFQXaNksK3adutVS8l2xzZU0cqEFrE9Sb7fC0EFK5uEk74wIreL1DERyjvsU915j1pcT2uEQ==
+react@16.14.0:
+  version "16.14.0"
+  resolved "https://registry.npmjs.org/react/-/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
+  integrity sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==
   dependencies:
     loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
 
 readable-stream@^2.0.1:
   version "2.3.7"
@@ -8239,12 +8252,13 @@ saxes@^5.0.1:
   dependencies:
     xmlchars "^2.2.0"
 
-scheduler@^0.22.0:
-  version "0.22.0"
-  resolved "https://registry.npmmirror.com/scheduler/-/scheduler-0.22.0.tgz#83a5d63594edf074add9a7198b1bae76c3db01b8"
-  integrity sha512-6QAm1BgQI88NPYymgGQLCZgvep4FyePDWFpXVK+zNSUgHwlqpJy8VEh8Et0KxTACS4VWwMousBElAZOH9nkkoQ==
+scheduler@^0.19.1:
+  version "0.19.1"
+  resolved "https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz#4f3e2ed2c1a7d65681f4c854fa8c5a1ccb40f196"
+  integrity sha512-n/zwRWRYSUj0/3g/otKDRPMh6qv2SYMWNq85IEa8iZyAv8od9zDYpGSnpBEjNgcMNq6Scbu5KfIPxNF72R/2EA==
   dependencies:
     loose-envify "^1.1.0"
+    object-assign "^4.1.1"
 
 schema-utils@2.7.0:
   version "2.7.0"
